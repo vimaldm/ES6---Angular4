@@ -1,0 +1,24 @@
+{
+  "name": "promises",
+  "version": "1.0.0",
+  "description": "Sample script to understand promises",
+  "main": "index.js",
+  "scripts": {
+    "watch": "babel -w src/ -d dist/",
+    "build": "babel src/ -d dist/",
+    "serve": "babel -w src/ -d dist/ | nodemon --watch dist",    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "promises"
+  ],
+  "author": "Vimal DM",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.17.1"
+  }
+}
