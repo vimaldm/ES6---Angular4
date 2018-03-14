@@ -1,6 +1,6 @@
 1.Your project main directory
 
-npm init
+```npm init```
 
 2.Install dependencies
 
