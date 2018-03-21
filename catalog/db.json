@@ -1,0 +1,19 @@
+{
+  "catalog": [
+    {
+      "id": 1,
+      "prod_title": "mens rings",
+      "prod_category": "rings"
+    },
+    {
+      "prod_title": ";alksjdf;ljas;kdjf",
+      "prod_category": "alsjdklfja",
+      "id": 2
+    },
+    {
+      "prod_title": "asjdflkasjdl;kfj",
+      "prod_category": ";jklajskdl;jf;akljs;d",
+      "id": 3
+    }
+  ]
+}

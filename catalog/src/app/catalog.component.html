@@ -1,0 +1,24 @@
+<h1>Catalog Management</h1>
+<form [formGroup]="catalogForm" (ngSubmit)="onFormSubmit()">
+  <table>
+    <tr><td>Product Title</td><td><input formControlName="prod_title">
+	  <label *ngIf="catalogForm.get('prod_title').invalid && processValidation" [ngClass] = "'error'">Product title is required. </label>
+    </td></tr>
+    <tr><td>Product Category</td><td><input formControlName="prod_category">
+	  <label *ngIf="catalogForm.get('prod_category').invalid && processValidation" [ngClass] = "'error'">Product category is required. </label>
+    </td></tr>	
+    <tr><td colspan="2">
+	  <button>CREATE</button>
+    </td></tr>
+  </table>
+ </form> 
+
+<h3>Product Details</h3>
+<table>
+  <tr><th>Product Id</th> <th>Product Title</th><th>Product Category</th><th colspan=2>Actions</th></tr>
+  <tr *ngFor="let catalog of allCatalog" >
+        <td>{{catalog.prod_id}}</td> <td>{{catalog.prod_title}}</td> <td>{{catalog.prod_category}}</td>
+	<td><button type="button" (click)="loadArticleToEdit(catalog.prod_id)">Edit</button> </td> 
+	<td><button type="button" (click)="deleteArticle(catalog.prod_id)">Delete</button></td>
+  </tr>
+</table> 
