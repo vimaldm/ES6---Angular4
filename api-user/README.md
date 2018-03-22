@@ -9,4 +9,4 @@ npm install cors```
 >db.user.insert({name:"Vimal", lastname:1989, dob:"1987-10-25"})
 ```
 ## Access api via below url
-```http://localhost:4200/api/v1/products```
+```http://localhost:4200/api/v1/users```
